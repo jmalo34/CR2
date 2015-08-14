@@ -15,8 +15,8 @@
     // check file names methods etc
      $app->get("/view_instances", function() use($app) {
          $my_RepeatCounter = new RepeatCounter;
-    //     $instances_within = $my_RepeatCounter->makeCountVonCount($_GET['string']);
-    //      return $app['twig']->render('instances_counted.html.twig', array('result' => $instances_counted));
+         $instances_counted = $my_RepeatCounter->countRepeats($_GET['string']);
+         return $app['twig']->render('instances_counted.html.twig', array('result' => $instances_counted));
      });
 
     return $app;

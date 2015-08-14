@@ -1,9 +1,14 @@
 SPEC 1
 BEHAVIOR: string is only one word in length
-INPUT:  single
-OUTPUT:  single
+INPUT:  street; street
+OUTPUT:  1
 
 SPEC 2
-BEHAVIOR:  
-INPUT:
-OUTPUT:
+BEHAVIOR:  searches string for case sensitive matches only
+INPUT:  street; There is only one street named Seasame Street
+OUTPUT:  1
+
+SPEC 3
+BEHAVIOR:  ignores partial matches
+INPUT:  street; Not all the streets in town can have the same name
+OUTPUT:  0
