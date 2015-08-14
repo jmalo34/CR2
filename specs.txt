@@ -1,0 +1,9 @@
+SPEC 1
+BEHAVIOR: string is only one word in length
+INPUT:  single
+OUTPUT:  single
+
+SPEC 2
+BEHAVIOR:  
+INPUT:
+OUTPUT:
